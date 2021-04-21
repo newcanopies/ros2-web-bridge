@@ -135,7 +135,7 @@ function createConnection(options) {
 
   let wsAddr = options.address || `ws://localhost:${options.port}`;
   console.log(`Websocket started on ${wsAddr}`);
-  // gracefuly shutdown rosbridge node commanding terminal
+  // graceful shutdown rosbridge node commanding terminal
   process.on('SIGINT', () => process.exit(1));
 }
 
